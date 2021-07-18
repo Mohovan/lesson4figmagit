@@ -3,6 +3,8 @@
     padding: 0;
     /*В файле стилей первой строчкой добавить обнуление стилей:*/
 }
+$width-site: 1140px;
+
 
 /*.wrapper{
     min-height: 100vh;
@@ -17,10 +19,10 @@
 }*/
 
 .container {
-    position: absolute;
-    width: 1140px;
-    /*В файле стилей создать блок container, отвечающий за центрирование нашей страницы:*/
-    
+    position: relative;
+    top: 0;
+    left: 10%;
+
 }
 
 .zone1 {
@@ -79,7 +81,7 @@
 }
 
 .inheader {
-   position: absolute;
+    position: absolute;
 }
 
 .ilu {
@@ -165,7 +167,7 @@
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
-    
+
 }
 
 .link-p {
@@ -177,7 +179,7 @@
     line-height: 26px;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    
+
 }
 
 .zone2 {
@@ -346,7 +348,8 @@
     letter-spacing: 0.05em;
     color: #222222;
 }
-.footer{
+
+.footer {
     width: 1366px;
     height: 669px;
     top: 1510px;
@@ -498,254 +501,315 @@
 }
 
 
-@media (max-width: 1024px){
-    .footer{
-    position: absolute;
-    top: 1510px;
+@media (max-width: 1024px) {
+    .footer {
+        position: absolute;
+        top: 1510px;
     }
 }
 
 @media (max-width: 667px) {
-    .info1txt .info1txt2{
+    .info1txt .info1txt2 {
         font-size: 32px;
         line-height: 37px;
         margin-bottom: 12px;
     }
-.footer{
-    position: absolute;
-    top: 1650px;
-}
 
-@media (max-width: 376px) and (max-width: 668px){
-.container{
-    max-width: 375px;
-    position: absolute;
-}
-.main{
-}
-.zone1, .header, .zone2, .What, .ourAnswer, .ourInfo{
-    position: absolute;
-    max-width: 375px;
-    box-sizing:border-box;
-    left: 0;
-    right: 0;
-}
-.zone1{
-    position: absolute;
-    height:376px;
-}
-.zone2{
-    top: 424px;
-}
-.inheader{
-    position: absolute;
-    max-width: 375px;
-    left: 0;
-    top: 0;
-    }
-.info12andsee{
-    position: absolute;
-    width: 375px;
-    justify-content: none;
-    left: 0;
-    top: 92px;
-    }
-.h4AndInfo2 {
-    top: 81px;
-        width: 375px;
+    .footer {
         position: absolute;
-        flex-direction: column;
-    }
-.info1txt{
-    position: absolute;
-    font-size: 32px;
-     line-height: 37px;
-    margin-bottom: 12px;
-    width: 343px;
-    height: 76px;
-    left: 50px;
-    top: 0px;
-    }
-    .info1txt2{
-        position: absolute;
-        font-size: 32px;
-         line-height: 37px;
-        margin-bottom: 12px;
-        width: 343px;
-        height: 76px;
-        left: 73px;
-        top: 30px; 
-    }
-.info2{
-    position: absolute;
-    top: 70px;
-    left: 15px;
-}
-.info2txt{
-height: 96px;
-width: 343px;
-left: 15px;
-top: 180px;
-border-radius: nullpx;
-}
-.linkproject{
-    position: absolute;
-    top: 180px;
-    left: 76px;
-}
-
-.What{
-    position: absolute;
-font-size: 24px;
-font-style: normal;
-font-weight: 300;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: center;
-}
-.ourInfo{
-position: absolute;
-font-size: 24px;
-font-style: normal;
-font-weight: 300;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: center;
-top: 2025px;
-left: 15px;
-}
-.ourAnswer{
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px;
-letter-spacing: 0.05em;
-text-align: center;   
-top: 2055px;
-    
-}
-.ilu{
-    display: none;
-    left: 0;
+        top: 1650px;
     }
 
-.footer{
-    width: 375px;
-    height: 542px;
-    position: absolute;
-    top: 2180px;
-    left: 0;
-    right: 0;
+    @media (max-width: 376px) and (max-width: 668px) {
+        .container {
+            max-width: 375px;
+            position: absolute;
+        }
+
+        .zone1 {
+            position: absolute;
+            max-width: 375px;
+            box-sizing: border-box;
+            left: 0;
+            right: 0;
+        }
+
+        .header {
+            position: absolute;
+            max-width: 375px;
+            box-sizing: border-box;
+            left: 0;
+            right: 0;
+        }
+
+        .zone2 {
+            position: absolute;
+            max-width: 375px;
+            box-sizing: border-box;
+            left: 0;
+            right: 0;
+        }
+
+        .What {
+            position: absolute;
+            max-width: 375px;
+            box-sizing: border-box;
+            left: 0;
+            right: 0;
+        }
+
+        .ourAnswer {
+            position: absolute;
+            max-width: 375px;
+            box-sizing: border-box;
+            left: 0;
+            right: 0;
+        }
+
+        .ourInfo {
+            position: absolute;
+            max-width: 375px;
+            box-sizing: border-box;
+            left: 0;
+            right: 0;
+        }
+
+        .zone1 {
+            position: absolute;
+            height: 376px;
+        }
+
+        .zone2 {
+            top: 424px;
+        }
+
+        .inheader {
+            position: absolute;
+            max-width: 375px;
+            left: 0;
+            top: 0;
+        }
+
+        .info12andsee {
+            position: absolute;
+            width: 375px;
+            justify-content: none;
+            left: 0;
+            top: 92px;
+        }
+
+        .h4AndInfo2 {
+            top: 81px;
+            width: 375px;
+            position: absolute;
+            flex-direction: column;
+        }
+
+        .info1txt {
+            position: absolute;
+            font-size: 32px;
+            line-height: 37px;
+            margin-bottom: 12px;
+            width: 343px;
+            height: 76px;
+            left: 50px;
+            top: 0px;
+        }
+
+        .info1txt2 {
+            position: absolute;
+            font-size: 32px;
+            line-height: 37px;
+            margin-bottom: 12px;
+            width: 343px;
+            height: 76px;
+            left: 73px;
+            top: 30px;
+        }
+
+        .info2 {
+            position: absolute;
+            top: 70px;
+            left: 15px;
+        }
+
+        .info2txt {
+            height: 96px;
+            width: 343px;
+            left: 15px;
+            top: 180px;
+            border-radius: nullpx;
+        }
+
+        .linkproject {
+            position: absolute;
+            top: 180px;
+            left: 76px;
+        }
+
+        .What {
+            position: absolute;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        .ourInfo {
+            position: absolute;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            top: 2025px;
+            left: 15px;
+        }
+
+        .ourAnswer {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            top: 2055px;
+
+        }
+
+        .ilu {
+            display: none;
+            left: 0;
+        }
+
+        .footer {
+            width: 375px;
+            height: 542px;
+            position: absolute;
+            top: 2180px;
+            left: 0;
+            right: 0;
+        }
+
+        .interested {
+            position: absolute;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            height: 51px;
+            width: 342.998779296875px;
+            left: 16.0009765625px;
+            top: 18px;
+            border-radius: nullpx;
+        }
+
+        .fact {
+            position: absolute;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            height: 97px;
+            width: 343px;
+            left: 16px;
+            top: 101px;
+            border-radius: nullpx;
+        }
+
+        .rule {
+            position: absolute;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            height: 26px;
+            width: 343px;
+            left: 15px;
+            top: 484px;
+            border-radius: nullpx;
+        }
+
+        .questions {
+            height: 36px;
+            width: 304px;
+            left: 56px;
+            top: 342px;
+            border-radius: nullpx;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0.05em;
+            text-align: left;
+        }
+
+        .phonenumber {
+            position: absolute;
+            height: 19px;
+            width: 303px;
+            left: 56px;
+            top: 395px;
+            border-radius: nullpx;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+            text-align: left;
+        }
+
+        .email {
+            position: absolute;
+            height: 19px;
+            width: 303px;
+            left: 56px;
+            top: 432px;
+            border-radius: nullpx;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+            text-align: left;
+        }
+
+        .T {
+            position: absolute;
+            height: 19px;
+            width: 17px;
+            left: 16px;
+            top: 395px;
+            border-radius: nullpx;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+            text-align: left;
+        }
+
+        .E {
+            position: absolute;
+            height: 19px;
+            width: 17px;
+            left: 16px;
+            top: 432px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+            text-align: left;
+        }
     }
-.interested{
-    position: absolute;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: center;
-    height: 51px;
-width: 342.998779296875px;
-left: 16.0009765625px;
-top: 18px;
-border-radius: nullpx;    
-}
-.fact{
-position: absolute;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px;
-letter-spacing: 0.05em;
-text-align: center;
-height: 97px;
-width: 343px;
-left: 16px;
-top: 101px;
-border-radius: nullpx;
-}
-.rule{
-    position: absolute;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0.05em;
-    text-align: center;
-    height: 26px;
-    width: 343px;
-    left: 15px;
-    top: 484px;
-    border-radius: nullpx; 
-}
-.questions{
-height: 36px;
-width: 304px;
-left: 56px;
-top: 342px;
-border-radius: nullpx;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0.05em;
-text-align: left;
-}
-.phonenumber{
-    position: absolute;
-    height: 19px;
-    width: 303px;
-    left: 56px;
-    top: 395px;
-    border-radius: nullpx;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0.05em;
-    text-align: left;  
-}
-.email{
-    position: absolute;
-    height: 19px;
-    width: 303px;
-    left: 56px;
-    top: 432px;
-    border-radius: nullpx;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0.05em;
-    text-align: left;
-}
-.T{
-    position: absolute;
-    height: 19px;
-    width: 17px;
-    left: 16px;
-    top: 395px;
-    border-radius: nullpx;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0.05em;
-    text-align: left;         
-}
-.E{
-    position: absolute;
-    height: 19px;
-    width: 17px;
-    left: 16px;
-    top: 432px;
-    border-radius: nullpx;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0.05em;
-    text-align: left;
-}
 }
